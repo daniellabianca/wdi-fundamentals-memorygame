@@ -8,10 +8,8 @@ var cardTwo = cards[2];
 cardsInPlay.push("cardTwo");
 console.log("User flipped king");
 
-if (cardsInPlay.length === 2) {
-    console.log();
-} else if (cardsInPlay[0] === cardsInPlay[1]) { 
-  alert("You found a match!");
- } else if (cardsInPlay[0] !== cardsInPlay[1]) { 
+if (cardsInPlay.length === 2 && cardsInPlay[0] === cardsInPlay[1]) {
+  alert("Congrats!");
+} else if (cardsInPlay[0] !== cardsInPlay[1]) { 
  alert("Sorry, try again.");
 }
