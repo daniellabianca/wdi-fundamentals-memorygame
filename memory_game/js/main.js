@@ -33,14 +33,13 @@ var cards = [
   };
   
   var flipCard = function(cardId) {
-    checkForMatch(); {
-    console.log("Player flipped " + cards[cardId].rank);}
-    cardsInPlay.push(cards[cardId].rank);{
+    checkForMatch();
+    console.log("Player flipped " + cards[cardId].rank);
+    cardsInPlay.push(cards[cardId].rank);
     console.log(cards[cardId].cardImage);
     console.log(cards[cardId].suit);
-    }
   };
 
-    flipCard();
     flipCard(0);
+    flipCard(1);
     flipCard(2);
