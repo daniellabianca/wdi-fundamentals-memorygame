@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Raleway:400,500,600,700" rel="stylesheet">
   <link href="css/reset.css" rel="stylesheet" type="text/reset">
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <title>Memory Card Game</title>
-  <header><h1>MEMORY CARD GAME</h1></header>
+  <header>
+    <h1>Memory Card Game</h1>
+  </header>
 </head>
 
 <body>
-  <nav><a href="#instructions" class="howto">INSTRUCTIONS</a>
-  <a href="#game" class="howto">GAME</a>
-</nav>
+  <nav><a href="#instructions" class="howto">Instructions</a>
+    <a href="#game" class="howto">Game</a>
+  </nav>
 
-  <main><a name="instructions"><h2>INSTRUCTIONS</a></h2>
-  <p>Concentration, also known as Match Match, Memory, Pelmanism, Shinkei-suijaku, Pexeso or simply Pairs, is a card game in which all of the cards are laid face down on a surface and two cards are flipped face up over each turn. The object of the game is to turn over pairs of matching cards.</p>
-<a name="game">
-<div>
-  <img src="images/back.png" alt="Queen of Diamonds">
-  <img src="images/back.png" alt="Queen of Hearts">
-  <img src="images/back.png" alt="King of Diamonds">
-  <img src="images/back.png" alt="King of Hearts">
-</div>
-</a>
-</main>
-<footer class="clearfix">
-  <p class="copyright">Copyright 2017</p>
-  <p class="message">Created with &hearts; by <span class="name">GA</span></p>
-    
-</footer>
-<script src="js/main.js"></script>
+  <main>
+    <a name="instructions">
+      <h2>Instructions</h2>
+    </a>
+    <p>Concentration, also known as Match Match, Memory, Pelmanism, Shinkei-suijaku, Pexeso or simply Pairs, is a card game
+      in which all of the cards are laid face down on a surface and two cards are flipped face up over each turn. The object
+      of the game is to turn over pairs of matching cards.</p><br>
+    <a name="game">
+      <h2>Game</h2>
+    </a>
+    <p> Click two cards to see if you have a match. Click the reset buttom to reset the board and play again.</p>
+    <div id="game-board" class="board clearfix">
+    </div>
+    <button type="reset" class="button" value="Reset" onClick="window.location.reload()">Reset the Game</button><br><br>
+  </main>
+
+  <p class="contact">
+    Email <a href="mailto:game@game.com">Us!!</a><br> Like Us on <a href="www.gamefacebookaccount.com">Facebook!</a></p>
+
+  <footer class="clearfix">
+    <p class="copyright">Copyright 2017</p>
+    <p class="message">Created with &hearts; by <span class="name">GA</span></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 </body>
 
 </html>
